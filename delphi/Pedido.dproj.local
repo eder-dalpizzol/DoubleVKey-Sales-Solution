@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/05/28 10:29:50.000.368,=C:\Users\Delphi\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/05/28 10:53:33.000.271,C:\tmp\UPedido.pas=C:\Users\Delphi\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/05/28 10:53:33.000.271,C:\tmp\UPedido.dfm=C:\Users\Delphi\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/05/28 10:53:44.000.839,C:\tmp\Pedido.dproj=C:\Users\Delphi\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/05/28 11:32:40.000.121,=C:\tmp\Unit1.pas</Transaction>
+    <Transaction>2022/05/28 11:32:54.000.585,C:\tmp\UPadrao.pas=C:\tmp\Unit1.pas</Transaction>
+    <Transaction>2022/05/28 12:06:28.764,C:\tmp\UPadrao.pas=</Transaction>
+    <Transaction>2022/05/28 12:34:57.108,C:\tmp\Pedido.dproj=C:\tmp\Pedido.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

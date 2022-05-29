@@ -1,0 +1,256 @@
+object FPedido: TFPedido
+  Left = 0
+  Top = 0
+  Caption = 'Pedidos de Venda'
+  ClientHeight = 580
+  ClientWidth = 839
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 0
+    Width = 839
+    Height = 580
+    ActivePage = TabSheet1
+    Align = alClient
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Pedido'
+      object Panel1: TPanel
+        Left = 0
+        Top = 0
+        Width = 831
+        Height = 63
+        Align = alTop
+        AutoSize = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+        object BtNovo: TSpeedButton
+          Left = 1
+          Top = 1
+          Width = 96
+          Height = 61
+          Align = alLeft
+          Caption = 'Novo'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          ParentFont = False
+          StyleElements = [seFont, seClient]
+          OnClick = BtNovoClick
+          ExplicitHeight = 47
+        end
+        object BtExcluir: TSpeedButton
+          Left = 97
+          Top = 1
+          Width = 96
+          Height = 61
+          Align = alLeft
+          Caption = 'Excluir'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          ParentFont = False
+          StyleElements = [seFont, seClient]
+          ExplicitHeight = 47
+        end
+        object BtImprimir: TSpeedButton
+          Left = 193
+          Top = 1
+          Width = 96
+          Height = 61
+          Align = alLeft
+          Caption = 'Imprimir'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          ParentFont = False
+          StyleElements = [seFont, seClient]
+          ExplicitLeft = 240
+          ExplicitTop = 16
+          ExplicitHeight = 22
+        end
+        object BtConfirmar: TSpeedButton
+          Left = 385
+          Top = 1
+          Width = 96
+          Height = 61
+          Align = alLeft
+          Caption = 'Confirmar'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          ParentFont = False
+          StyleElements = [seFont, seClient]
+        end
+        object BtCancelar: TSpeedButton
+          Left = 289
+          Top = 1
+          Width = 96
+          Height = 61
+          Align = alLeft
+          Caption = 'Cancelar'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          ParentFont = False
+          StyleElements = [seFont, seClient]
+        end
+        object BtFechar: TSpeedButton
+          Left = 734
+          Top = 1
+          Width = 96
+          Height = 61
+          Align = alRight
+          Caption = 'Fechar'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          ParentFont = False
+          ExplicitLeft = 481
+        end
+      end
+      object PTotaisPedido: TFlowPanel
+        Left = 0
+        Top = 488
+        Width = 831
+        Height = 64
+        Align = alBottom
+        TabOrder = 1
+        object Label1: TLabel
+          Left = 1
+          Top = 1
+          Width = 29
+          Height = 13
+          Caption = 'Totais'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+      end
+      object Panel2: TPanel
+        Left = 0
+        Top = 63
+        Width = 831
+        Height = 425
+        Align = alClient
+        TabOrder = 2
+        object DBGrid1: TDBGrid
+          Left = 1
+          Top = 141
+          Width = 829
+          Height = 283
+          Align = alClient
+          TabOrder = 0
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'Tahoma'
+          TitleFont.Style = []
+        end
+        object Panel3: TPanel
+          Left = 1
+          Top = 1
+          Width = 829
+          Height = 140
+          Align = alTop
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 1
+          ExplicitLeft = -39
+          ExplicitTop = -5
+          object Label2: TLabel
+            Left = 0
+            Top = 8
+            Width = 37
+            Height = 13
+            Caption = 'Cliente:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+          end
+          object DBEdit1: TDBEdit
+            Left = 0
+            Top = 22
+            Width = 96
+            Height = 21
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 0
+          end
+          object DBEdit2: TDBEdit
+            Left = 0
+            Top = 73
+            Width = 96
+            Height = 21
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 1
+          end
+          object Edit1: TEdit
+            Left = 96
+            Top = 22
+            Width = 384
+            Height = 21
+            Align = alCustom
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clGrayText
+            Font.Height = -11
+            Font.Name = 'Tahoma'
+            Font.Style = [fsItalic]
+            ParentFont = False
+            TabOrder = 2
+            Text = 'Digite codigo do cliente ou utilize clique duplo'
+          end
+        end
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Consulta'
+      ImageIndex = 1
+    end
+  end
+end
