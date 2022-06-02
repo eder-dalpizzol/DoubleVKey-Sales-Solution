@@ -1,0 +1,16 @@
+program Pedido;
+
+uses
+  Vcl.Forms,
+  UPedido in 'UPedido.pas' {FPedido},
+  UDMPedido in 'UDMPedido.pas' {FDMPedido: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFPedido, FPedido);
+  Application.CreateForm(TFDMPedido, FDMPedido);
+  Application.Run;
+end.

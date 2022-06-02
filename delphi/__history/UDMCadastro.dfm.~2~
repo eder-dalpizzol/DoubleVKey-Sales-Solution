@@ -1,0 +1,34 @@
+object FDMCadastro: TFDMCadastro
+  OldCreateOrder = False
+  Height = 370
+  Width = 534
+  object QProduto: TFDQuery
+    Connection = FPedido.FDConnect
+    SQL.Strings = (
+      'select * '
+      'from produto p')
+    Left = 208
+    Top = 64
+    object QProdutoID_PRODUTO: TFDAutoIncField
+      FieldName = 'ID_PRODUTO'
+      Origin = 'ID_PRODUTO'
+      ProviderFlags = [pfInWhere, pfInKey]
+    end
+    object QProdutoDESCRICAO: TStringField
+      AutoGenerateValue = arDefault
+      FieldName = 'DESCRICAO'
+      Origin = 'DESCRICAO'
+      Size = 255
+    end
+    object QProdutoPR_VENDA: TFloatField
+      AutoGenerateValue = arDefault
+      FieldName = 'PR_VENDA'
+      Origin = 'PR_VENDA'
+    end
+  end
+  object DSProduto: TDataSource
+    DataSet = QProduto
+    Left = 224
+    Top = 144
+  end
+end

@@ -1,0 +1,35 @@
+unit UDMCadastro;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, Data.DB,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+
+type
+  TFDMCadastro = class(TDataModule)
+    QProduto: TFDQuery;
+    QProdutoID_PRODUTO: TFDAutoIncField;
+    QProdutoDESCRICAO: TStringField;
+    QProdutoPR_VENDA: TFloatField;
+    DSProduto: TDataSource;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FDMCadastro: TFDMCadastro;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+uses UPedido;
+
+{$R *.dfm}
+
+end.

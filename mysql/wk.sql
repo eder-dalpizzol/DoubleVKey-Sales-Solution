@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
--- Host:                         127.0.0.1
--- Server version:               5.7.38-log - MySQL Community Server (GPL)
--- Server OS:                    Win64
--- HeidiSQL Version:             12.0.0.6468
+-- Servidor:                     127.0.0.1
+-- Versão do servidor:           5.7.38-log - MySQL Community Server (GPL)
+-- OS do Servidor:               Win32
+-- HeidiSQL Versão:              12.0.0.6468
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -15,11 +15,11 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
--- Dumping database structure for wk
+-- Copiando estrutura do banco de dados para wk
 CREATE DATABASE IF NOT EXISTS `wk` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `wk`;
 
--- Dumping structure for table wk.cliente
+-- Copiando estrutura para tabela wk.cliente
 CREATE TABLE IF NOT EXISTS `cliente` (
   `ID_CLIENTE` int(11) NOT NULL AUTO_INCREMENT,
   `NOME_CLIENTE` varchar(255) CHARACTER SET latin1 NOT NULL DEFAULT '',
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS `cliente` (
   PRIMARY KEY (`ID_CLIENTE`)
 ) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
--- Dumping data for table wk.cliente: 21 rows
+-- Copiando dados para a tabela wk.cliente: 21 rows
 /*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
 INSERT INTO `cliente` (`ID_CLIENTE`, `NOME_CLIENTE`, `CIDADE_CLIENTE`, `UF_CLIENTE`) VALUES
 	(1, 'JOSE SILVA', 'PONTA GROSSA', 'PR');
@@ -74,44 +74,57 @@ INSERT INTO `cliente` (`ID_CLIENTE`, `NOME_CLIENTE`, `CIDADE_CLIENTE`, `UF_CLIEN
 	(21, 'VANESSA VERONICA VAZ ', 'SAO PAULO', 'SP');
 /*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
 
--- Dumping structure for table wk.pedido
+-- Copiando estrutura para tabela wk.pedido
 CREATE TABLE IF NOT EXISTS `pedido` (
   `ID_PEDIDO` int(11) NOT NULL AUTO_INCREMENT,
-  `COD_CLIENTE` int(11) NOT NULL DEFAULT '0',
+  `ID_CLIENTE` int(11) NOT NULL DEFAULT '0',
   `PEDIDO_VALOR` double(14,2) NOT NULL DEFAULT '0.00',
   `DATA_EMISSAO` date DEFAULT NULL,
   PRIMARY KEY (`ID_PEDIDO`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
--- Dumping data for table wk.pedido: 0 rows
-/*!40000 ALTER TABLE `pedido` DISABLE KEYS */;
-/*!40000 ALTER TABLE `pedido` ENABLE KEYS */;
+-- Copiando dados para a tabela wk.pedido: ~2 rows (aproximadamente)
+INSERT INTO `pedido` (`ID_PEDIDO`, `ID_CLIENTE`, `PEDIDO_VALOR`, `DATA_EMISSAO`) VALUES
+	(1, 1, 6.00, '2022-06-02');
+INSERT INTO `pedido` (`ID_PEDIDO`, `ID_CLIENTE`, `PEDIDO_VALOR`, `DATA_EMISSAO`) VALUES
+	(2, 3, 0.00, NULL);
+INSERT INTO `pedido` (`ID_PEDIDO`, `ID_CLIENTE`, `PEDIDO_VALOR`, `DATA_EMISSAO`) VALUES
+	(3, 4, 0.00, NULL);
+INSERT INTO `pedido` (`ID_PEDIDO`, `ID_CLIENTE`, `PEDIDO_VALOR`, `DATA_EMISSAO`) VALUES
+	(4, 4, 0.00, NULL);
 
--- Dumping structure for table wk.pedido_item
+-- Copiando estrutura para tabela wk.pedido_item
 CREATE TABLE IF NOT EXISTS `pedido_item` (
   `ITEM` int(11) NOT NULL DEFAULT '0',
-  `ID_PEDIDO` int(11) NOT NULL DEFAULT '0',
+  `ID_PEDIDO` int(11) NOT NULL AUTO_INCREMENT,
   `COD_PRODUTO` int(11) NOT NULL DEFAULT '0',
   `QUANTIDADE` double(14,2) NOT NULL DEFAULT '0.00',
   `VALOR_UNITARIO` double(14,2) NOT NULL DEFAULT '0.00',
   `VALOR_TOTAL` double(14,2) NOT NULL DEFAULT '0.00',
   PRIMARY KEY (`ID_PEDIDO`,`ITEM`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
--- Dumping data for table wk.pedido_item: 0 rows
-/*!40000 ALTER TABLE `pedido_item` DISABLE KEYS */;
-/*!40000 ALTER TABLE `pedido_item` ENABLE KEYS */;
+-- Copiando dados para a tabela wk.pedido_item: ~0 rows (aproximadamente)
+INSERT INTO `pedido_item` (`ITEM`, `ID_PEDIDO`, `COD_PRODUTO`, `QUANTIDADE`, `VALOR_UNITARIO`, `VALOR_TOTAL`) VALUES
+	(1, 1, 3, 2.00, 3.00, 6.00);
+INSERT INTO `pedido_item` (`ITEM`, `ID_PEDIDO`, `COD_PRODUTO`, `QUANTIDADE`, `VALOR_UNITARIO`, `VALOR_TOTAL`) VALUES
+	(0, 2, 4, 5.00, 2.92, 14.60);
+INSERT INTO `pedido_item` (`ITEM`, `ID_PEDIDO`, `COD_PRODUTO`, `QUANTIDADE`, `VALOR_UNITARIO`, `VALOR_TOTAL`) VALUES
+	(0, 3, 5, 34.00, 2.12, 72.08);
+INSERT INTO `pedido_item` (`ITEM`, `ID_PEDIDO`, `COD_PRODUTO`, `QUANTIDADE`, `VALOR_UNITARIO`, `VALOR_TOTAL`) VALUES
+	(0, 4, 3, 4.00, 4.15, 16.60);
+INSERT INTO `pedido_item` (`ITEM`, `ID_PEDIDO`, `COD_PRODUTO`, `QUANTIDADE`, `VALOR_UNITARIO`, `VALOR_TOTAL`) VALUES
+	(0, 5, 1, 1.00, 6.31, 6.31);
 
--- Dumping structure for table wk.produto
+-- Copiando estrutura para tabela wk.produto
 CREATE TABLE IF NOT EXISTS `produto` (
   `ID_PRODUTO` int(11) NOT NULL AUTO_INCREMENT,
   `DESCRICAO` varchar(255) COLLATE utf8_bin NOT NULL DEFAULT '',
   `PR_VENDA` double(14,2) NOT NULL DEFAULT '0.00',
   PRIMARY KEY (`ID_PRODUTO`)
-) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
--- Dumping data for table wk.produto: 20 rows
-/*!40000 ALTER TABLE `produto` DISABLE KEYS */;
+-- Copiando dados para a tabela wk.produto: ~20 rows (aproximadamente)
 INSERT INTO `produto` (`ID_PRODUTO`, `DESCRICAO`, `PR_VENDA`) VALUES
 	(1, 'NESCAU', 6.31);
 INSERT INTO `produto` (`ID_PRODUTO`, `DESCRICAO`, `PR_VENDA`) VALUES
@@ -152,7 +165,6 @@ INSERT INTO `produto` (`ID_PRODUTO`, `DESCRICAO`, `PR_VENDA`) VALUES
 	(19, 'SUPER NINTENDO', 2.29);
 INSERT INTO `produto` (`ID_PRODUTO`, `DESCRICAO`, `PR_VENDA`) VALUES
 	(20, 'PARACETAMOL', 2.44);
-/*!40000 ALTER TABLE `produto` ENABLE KEYS */;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

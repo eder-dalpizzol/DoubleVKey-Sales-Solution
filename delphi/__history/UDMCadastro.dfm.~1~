@@ -1,0 +1,10 @@
+object FDMCadastro: TFDMCadastro
+  OldCreateOrder = False
+  Height = 370
+  Width = 534
+  object QProduto: TFDQuery
+    Connection = FPedido.FDConnect
+    Left = 208
+    Top = 64
+  end
+end

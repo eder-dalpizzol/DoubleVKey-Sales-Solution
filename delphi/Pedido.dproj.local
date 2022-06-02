@@ -7,7 +7,33 @@
     <Transaction>2022/05/28 10:53:44.000.839,C:\tmp\Pedido.dproj=C:\Users\Delphi\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2022/05/28 11:32:40.000.121,=C:\tmp\Unit1.pas</Transaction>
     <Transaction>2022/05/28 11:32:54.000.585,C:\tmp\UPadrao.pas=C:\tmp\Unit1.pas</Transaction>
-    <Transaction>2022/05/28 12:06:28.764,C:\tmp\UPadrao.pas=</Transaction>
-    <Transaction>2022/05/28 12:34:57.108,C:\tmp\Pedido.dproj=C:\tmp\Pedido.dproj</Transaction>
+    <Transaction>2022/05/28 12:06:28.000.764,C:\tmp\UPadrao.pas=</Transaction>
+    <Transaction>2022/05/28 12:34:57.000.108,C:\tmp\Pedido.dproj=C:\tmp\Pedido.dproj</Transaction>
+    <Transaction>2022/05/30 00:24:14.000.120,=C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\Unit1.pas</Transaction>
+    <Transaction>2022/05/30 00:24:50.000.938,C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\Unit1.dfm=C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\UDMPedido.dfm</Transaction>
+    <Transaction>2022/05/30 00:24:50.000.938,C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\Unit1.pas=C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\UDMPedido.pas</Transaction>
+    <Transaction>2022/05/30 04:21:50.000.997,=C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\Unit1.pas</Transaction>
+    <Transaction>2022/05/30 04:23:28.000.892,=C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\Unit2.pas</Transaction>
+    <Transaction>2022/05/30 04:26:45.000.183,C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\Unit2.dfm=C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\UDMCadastro.dfm</Transaction>
+    <Transaction>2022/05/30 04:26:45.000.183,C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\Unit2.pas=C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\UDMCadastro.pas</Transaction>
+    <Transaction>2022/05/30 04:28:20.000.798,C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\Unit1.dfm=C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\UListaProduto.dfm</Transaction>
+    <Transaction>2022/05/30 04:28:20.000.798,C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\Unit1.pas=C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\UListaProduto.pas</Transaction>
+    <Transaction>2022/05/31 17:34:27.000.219,=C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\Unit1.pas</Transaction>
+    <Transaction>2022/05/31 17:35:06.000.325,C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\Unit1.pas=C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\UDMCon.pas</Transaction>
+    <Transaction>2022/05/31 17:35:06.000.325,C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\Unit1.dfm=C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\UDMCon.dfm</Transaction>
+    <Transaction>2022/05/31 17:54:27.000.418,C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\UListaProduto.pas=</Transaction>
+    <Transaction>2022/06/01 12:52:00.000.873,=C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\Unit1.pas</Transaction>
+    <Transaction>2022/06/01 12:56:55.000.736,C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\Unit1.pas=C:\Users\dalpizzol\Downloads\DoubleVKey-Sales-Solution-main\DoubleVKey-Sales-Solution-main\delphi\ULib.pas</Transaction>
   </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="UPedido.pas"/>
+    <File Path="UPedido.dfm"/>
+    <File Path="UDMPedido.pas"/>
+    <File Path="UDMPedido.dfm"/>
+    <File Path="UDMCadastro.pas"/>
+    <File Path="UDMCadastro.dfm"/>
+    <File Path="UDMCon.pas"/>
+    <File Path="UDMCon.dfm"/>
+    <File Path="ULib.pas"/>
+  </ProjectSortOrder>
 </BorlandProject>

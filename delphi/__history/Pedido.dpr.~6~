@@ -1,0 +1,20 @@
+program Pedido;
+
+uses
+  Vcl.Forms,
+  UPedido in 'UPedido.pas' {FPedido},
+  UDMPedido in 'UDMPedido.pas' {FDMPedido: TDataModule},
+  UListaProduto in 'UListaProduto.pas' {FListaProduto},
+  UDMCadastro in 'UDMCadastro.pas' {FDMCadastro: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFPedido, FPedido);
+  Application.CreateForm(TFDMPedido, FDMPedido);
+  Application.CreateForm(TFListaProduto, FListaProduto);
+  Application.CreateForm(TFDMCadastro, FDMCadastro);
+  Application.Run;
+end.
